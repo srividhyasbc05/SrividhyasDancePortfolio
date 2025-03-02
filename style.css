@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: darkslategray;
+}
+
+
+.topdiv{
+    background-color: coral;
+    width: auto;
+    height: 10em;
+    border: 3px solid indianred;
+}
