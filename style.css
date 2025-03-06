@@ -3,12 +3,104 @@
 }
 body{
     background-color: darkslategray;
+    justify-content: center;
+    margin: 0 auto;
 }
 
+.old-standard-tt-regular {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.old-standard-tt-bold {
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+.old-standard-tt-regular-italic {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
 
-.topdiv{
+h1{
+    margin: 5px;
+}
+h2{
+    margin: 10px;
+}
+
+#header{
     background-color: coral;
     width: auto;
-    height: 10em;
+    height: fit-content;
     border: 3px solid indianred;
+}
+.spanimg{
+    display: flex;
+    margin:0px;
+}
+.homepage{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frontpagedivparent{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+.fullscreendivparent{
+    display:flex;
+    flex-direction: row;
+}
+
+.info{
+    max-width:50%;
+    display:flex;
+    flex-direction: column;
+    
+    padding: 2px;
+}
+img{
+    margin: 10px;
+    padding: 2px;
+}
+.imgparent{
+    width: 30%;
+    justify-content: space-around;
+}
+.gallery{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 10px;
+    padding: 10px;
+    align-items: center; 
+    overflow: auto;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 800px) { 
+    body {
+        
+    }
+
+    .imgparent{
+        width: 80%;
+        justify-content: center;
+    }
+    .info{
+        max-width:80%;
+        display:flex;
+        flex-direction: column;
+        margin:10px;
+        padding: 2px;
+        justify-content: center;
+    }
+
 }
