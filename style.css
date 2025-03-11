@@ -1,6 +1,21 @@
 *{
     margin: 0px;
 }
+#navbar{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: indianred;
+    gap: 20px;
+    width: fit-content;
+    padding:5px;
+    display: inline-flex;
+}
+.navbartext{
+    size:40px;
+    text-align:end;
+    color:#2D080A
+}
 body{
     background-color: darkslategray;
     justify-content: center;
@@ -12,6 +27,8 @@ body{
     font-weight: 400;
     font-style: normal;
   }
+
+
 .old-standard-tt-bold {
     font-family: "Old Standard TT", serif;
     font-weight: 700;
@@ -21,21 +38,44 @@ body{
     font-family: "Old Standard TT", serif;
     font-weight: 400;
     font-style: italic;
-  }
-  
-
+  }  
 h1{
     margin: 5px;
+    color: #2D080A;
+    text-shadow:1px 1px indianred;
 }
 h2{
     margin: 10px;
+    color:#f2f6d0;
+    font-family: 'Imperial Script';
+    text-align: center;
 }
-
+h3{
+    margin: 10px;
+    color:#f2f6d0;
+    font-family: 'Old Standard TT';
+}
+p{
+    color:#D4CBE5; 
+}
+a{
+    color: #2D080A;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(196, 68, 68);
+    padding: 0px;
+    margin:0px;
+}
+a:visited{
+    color: #2D080A;
+}
 #header{
     background-color: coral;
     width: auto;
     height: fit-content;
     border: 3px solid indianred;
+    display: flex;
 }
 .spanimg{
     display: flex;
@@ -49,24 +89,30 @@ h2{
 }
 
 .frontpagedivparent{
+    width: 80%;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: red;
+    margin: 0 auto;
+    justify-content: space-around;
 }
 
 .fullscreendivparent{
     display:flex;
     flex-direction: row;
 }
+.performancesparent{
+    display:flex;
+    justify-content: flex-end;
+    width:100%;
+}
 
 .info{
     max-width:50%;
     display:flex;
     flex-direction: column;
-    
-    padding: 2px;
 }
+
 img{
     margin: 10px;
     padding: 2px;
@@ -75,22 +121,51 @@ img{
     width: 30%;
     justify-content: space-around;
 }
+.imgparent:hover{
+    background-color: indigo;
+    opacity: 80%;
+}
+
+.imgparenttwo{
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px;
+    padding:10px;
+}
+
 .gallery{
     display: flex;
-    flex-wrap:wrap;
     margin: 10px;
     padding: 10px;
     align-items: center; 
     overflow: auto;
     justify-content: space-evenly;
 }
+.gallery:hover{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    align-items: center; 
+    overflow: auto;
+    justify-content: space-evenly;
+    background-color: indigo;
+    opacity: 0.7;
+}
+.galleryimg{
+    width:25%;
+    height:auto;
+}
+li{
+    color:#f2f6d0;
+}
 
 @media (max-width: 800px) { 
-    body {
-        
+    .galleryimg{
+        width:40%;
     }
-
-    .imgparent{
+    .imgparent, .performancesparent{
         width: 80%;
         justify-content: center;
     }
@@ -103,4 +178,17 @@ img{
         justify-content: center;
     }
 
+}
+@media (max-width: 700px) { 
+    #navbar{
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        background-color: indianred;
+        gap: 20px;
+        width: fit-content;
+        padding:5px;
+        display: flex;
+        flex-direction: column;
+    }
 }
