@@ -13,8 +13,9 @@
 }
 .navbartext{
     size:40px;
-    text-align:end;
-    color:#2D080A
+    text-align:center;
+    color:#2D080A;
+    width:100%;
 }
 body{
     background-color: darkslategray;
@@ -63,11 +64,11 @@ a{
     color: #2D080A;
     text-decoration: none;
 }
-a:hover{
+.navbartext:hover{
     background-color: rgb(196, 68, 68);
     padding: 0px;
     margin:0px;
-    text-decoration: italic;
+    font-size: 130%;
 }
 a:visited{
     color: #2D080A;
@@ -123,7 +124,7 @@ img{
     width: 30%;
     justify-content: space-around;
 }
-.imgparent:hover{
+img:hover{
     background-color: indigo;
     opacity: 80%;
 }
@@ -133,8 +134,6 @@ img{
     height: auto;
     justify-content: space-around;
     align-items: center;
-    margin:10px;
-    padding:10px;
 }
 
 .gallery{
@@ -152,8 +151,8 @@ img{
     align-items: center; 
     overflow: auto;
     justify-content: space-evenly;
-    background-color: indigo;
-    opacity: 0.7;
+    background-color: rgb(57, 90, 120);
+    opacity: 90%;
 }
 .galleryimg{
     width:25%;
@@ -200,12 +199,12 @@ li{
         font-size: 48px;
     }
     #navbar{
-    position:fixed;
+    position: absolute;
     left:0px;
     right:0px;
     background-color: indianred;
-    width:100%;
     padding:5px;
+    width:100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
