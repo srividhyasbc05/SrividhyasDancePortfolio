@@ -13,9 +13,9 @@ function gallery (){
         img.src = filearray[i]
         
         
-        if (imgElement.naturalHeight > imgElement.naturalWidth){
+        if (img.naturalHeight > img.naturalWidth){
             img.classList.add("vertgalimg")
-        }else if (img.height < img.width){
+        }else if (img.naturalHeight <= img.naturalWidth){
             img.classList.add("horizgalimg")
         }
         column.appendChild(img);
